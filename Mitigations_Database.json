@@ -1,0 +1,100 @@
+{
+  "T1566": {
+    "name": "Phishing",
+    "mitigations": [
+      "M1049: Antivirus/Antimalware - Use anti-malware with email scanning",
+      "M1031: Network Intrusion Prevention - Deploy email gateway solutions",
+      "M1017: User Training - Conduct regular phishing awareness training",
+      "M1021: Restrict Web-Based Content - Block suspicious attachments"
+    ]
+  },
+  "T1059": {
+    "name": "Command and Scripting Interpreter",
+    "mitigations": [
+      "M1038: Execution Prevention - Implement application control",
+      "M1049: Antivirus/Antimalware - Use behavior-based detection",
+      "M1026: Privileged Account Management - Restrict scripting permissions",
+      "M1042: Disable or Remove Feature or Program - Disable unnecessary interpreters"
+    ]
+  },
+  "T1071": {
+    "name": "Application Layer Protocol",
+    "mitigations": [
+      "M1031: Network Intrusion Prevention - Deploy network IDS/IPS",
+      "M1037: Filter Network Traffic - Use web proxies with SSL inspection",
+      "M1020: SSL/TLS Inspection - Monitor encrypted traffic"
+    ]
+  },
+  "T1003": {
+    "name": "OS Credential Dumping",
+    "mitigations": [
+      "M1028: Operating System Configuration - Enable Credential Guard (Windows)",
+      "M1043: Credential Access Protection - Implement LSASS protection",
+      "M1026: Privileged Account Management - Minimize admin account usage",
+      "M1027: Password Policies - Enforce strong password requirements"
+    ]
+  },
+  "T1082": {
+    "name": "System Information Discovery",
+    "mitigations": [
+      "M1038: Execution Prevention - Limit process execution capabilities",
+      "M1018: User Account Management - Apply least privilege principles"
+    ]
+  },
+  "T1486": {
+    "name": "Data Encrypted for Impact",
+    "mitigations": [
+      "M1053: Data Backup - Maintain offline, encrypted backups",
+      "M1040: Behavior Prevention on Endpoint - Deploy anti-ransomware",
+      "M1022: Restrict File and Directory Permissions - Limit write access"
+    ]
+  },
+  "T1490": {
+    "name": "Inhibit System Recovery",
+    "mitigations": [
+      "M1053: Data Backup - Protect backup systems from tampering",
+      "M1028: Operating System Configuration - Restrict access to recovery tools",
+      "M1018: User Account Management - Limit admin privileges"
+    ]
+  },
+  "T1047": {
+    "name": "Windows Management Instrumentation",
+    "mitigations": [
+      "M1026: Privileged Account Management - Restrict WMI permissions",
+      "M1038: Execution Prevention - Monitor and control WMI execution",
+      "M1018: User Account Management - Apply least privilege"
+    ]
+  },
+  "AML.T0000": {
+    "name": "ML Model Access",
+    "mitigations": [
+      "M1: Model Access Control - Implement authentication for model APIs",
+      "M2: API Rate Limiting - Prevent excessive queries",
+      "M3: Output Filtering - Sanitize model responses"
+    ]
+  },
+  "AML.T0001": {
+    "name": "Model Inversion",
+    "mitigations": [
+      "M1: Differential Privacy - Add noise to model outputs",
+      "M2: Query Limitation - Restrict number of inference requests",
+      "M3: Output Perturbation - Add randomness to predictions"
+    ]
+  },
+  "AML.T0002": {
+    "name": "Adversarial Examples",
+    "mitigations": [
+      "M1: Adversarial Training - Train model with adversarial examples",
+      "M2: Input Validation - Sanitize and validate inputs",
+      "M3: Ensemble Methods - Use multiple models for consensus"
+    ]
+  },
+  "AML.T0003": {
+    "name": "Data Poisoning",
+    "mitigations": [
+      "M1: Data Validation - Implement anomaly detection on training data",
+      "M2: Provenance Tracking - Verify data sources and integrity",
+      "M3: Robust Training - Use poisoning-resistant algorithms"
+    ]
+  }
+}
