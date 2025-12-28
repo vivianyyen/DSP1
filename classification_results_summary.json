@@ -1,0 +1,18 @@
+{
+  "best_model": "Random Forest",
+  "performance": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0
+  },
+  "alias_detection": {
+    "total_potential_aliases": 171,
+    "top_10_pairs": [
+      {
+        "adversary_1": "Frankenstein",
+        "adversary_2": "UNC2452",
+        "id_1": "G0101",
+        "id_2": "G0118",
+        "similarity": 1.0,
+        "cluster_1": 
